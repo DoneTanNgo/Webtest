@@ -139,9 +139,22 @@
 	<script type='text/javascript' src='index.js'></script>
 	<script type='text/javascript'>//<![CDATA[
 
-		const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":56721952,"index.wasm":17860295},"focusCanvas":true,"gdnativeLibs":[],"wasm": "Webtest.wasm","pck": "Webtest.pck","js": "Webest.js",};
-		var engine = new Engine(GODOT_CONFIG);
-
+		const GODOT_CONFIG = {
+        "args": [],
+        "canvasResizePolicy": 2,
+        "executable": "Webtest",
+        "experimentalVK": false,
+        "fileSizes": {
+            "Webtest.pck": 56721952,
+            "Webtest.wasm": 17860295
+        },
+        "focusCanvas": true,
+        "gdnativeLibs": [],
+        "wasm": "Webtest.wasm",
+        "pck": "Webtest.pck",
+        "js": "Webtest.js"
+    };
+    var engine = new Engine(GODOT_CONFIG);
 		(function() {
 			const INDETERMINATE_STATUS_STEP_MS = 100;
 			var statusProgress = document.getElementById('status-progress');
